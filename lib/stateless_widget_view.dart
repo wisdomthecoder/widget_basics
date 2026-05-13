@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StatelessWidgetView extends StatelessWidget {
+
   const StatelessWidgetView({super.key});
 
   @override
@@ -8,10 +9,11 @@ class StatelessWidgetView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Stateless Widgets')),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: .spaceBetween,
         spacing: 24,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+
           //Container
           /*  Container(
             width: 300,
@@ -129,6 +131,7 @@ class StatelessWidgetView extends StatelessWidget {
               Container(width: 120, height: 130, color: Colors.black),
               Container(width: 120, height: 75, color: Colors.pink),
               Container(width: 120, height: 100, color: Colors.green),
+              Text("data", )
             ],
           ),
 
@@ -146,6 +149,7 @@ class StatelessWidgetView extends StatelessWidget {
                 Center(
                   child: Text(
                     "This is our image",
+                    textAlign: .justify,
                     style: TextStyle(
                       fontSize: 16,
                       backgroundColor: Colors.yellow,
